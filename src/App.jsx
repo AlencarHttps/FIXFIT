@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { 
@@ -68,7 +67,7 @@ const App = () => {
   };
 
   const whatsappMessage = "Olá! Gostaria de saber mais sobre os serviços da FIXFIT.";
-  const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappUrl = `https://wa.me/554792104490?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <div className="min-h-screen bg-slate-900 text-white">
@@ -111,7 +110,11 @@ const App = () => {
                 onClick={() => window.open(whatsappUrl, '_blank')}
                 className="bg-green-600 hover:bg-green-700"
               >
-                <MessageCircle className="w-4 h-4 mr-2" />
+                <span className="w-4 h-4 mr-2" style={{display: 'inline-block'}}>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="20" height="20">
+                    <path d="M12 2C6.477 2 2 6.477 2 12c0 1.85.504 3.58 1.38 5.07L2 22l5.13-1.35A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.64 0-3.17-.5-4.45-1.36l-.32-.21-3.05.8.82-2.97-.21-.33A7.96 7.96 0 0 1 4 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8zm4.29-5.71c-.2-.1-1.18-.58-1.36-.65-.18-.07-.31-.1-.44.1-.13.2-.5.65-.62.78-.12.13-.23.15-.43.05-.2-.1-.84-.31-1.6-.99-.59-.53-.99-1.18-1.11-1.38-.12-.2-.01-.3.09-.4.09-.09.2-.23.3-.34.1-.11.13-.19.2-.32.07-.13.03-.25-.01-.35-.05-.1-.44-1.06-.6-1.45-.16-.39-.32-.34-.44-.35-.11-.01-.25-.01-.39-.01-.13 0-.34.05-.52.25-.18.2-.7.68-.7 1.65 0 .97.7 1.91.8 2.05.1.13 1.38 2.12 3.36 2.89.47.16.84.25 1.13.32.47.1.9.09 1.24.05.38-.06 1.18-.48 1.35-.94.17-.46.17-.85.12-.94-.05-.09-.18-.13-.38-.23z"/>
+                  </svg>
+                </span>
                 Fale Conosco
               </Button>
             </nav>
@@ -153,7 +156,11 @@ const App = () => {
                   onClick={() => window.open(whatsappUrl, '_blank')}
                   className="bg-green-600 hover:bg-green-700 w-fit"
                 >
-                  <MessageCircle className="w-4 h-4 mr-2" />
+                  <span className="w-4 h-4 mr-2" style={{display: 'inline-block'}}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="20" height="20">
+                      <path d="M12 2C6.477 2 2 6.477 2 12c0 1.85.504 3.58 1.38 5.07L2 22l5.13-1.35A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.64 0-3.17-.5-4.45-1.36l-.32-.21-3.05.8.82-2.97-.21-.33A7.96 7.96 0 0 1 4 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8zm4.29-5.71c-.2-.1-1.18-.58-1.36-.65-.18-.07-.31-.1-.44.1-.13.2-.5.65-.62.78-.12.13-.23.15-.43.05-.2-.1-.84-.31-1.6-.99-.59-.53-.99-1.18-1.11-1.38-.12-.2-.01-.3.09-.4.09-.09.2-.23.3-.34.1-.11.13-.19.2-.32.07-.13.03-.25-.01-.35-.05-.1-.44-1.06-.6-1.45-.16-.39-.32-.34-.44-.35-.11-.01-.25-.01-.39-.01-.13 0-.34.05-.52.25-.18.2-.7.68-.7 1.65 0 .97.7 1.91.8 2.05.1.13 1.38 2.12 3.36 2.89.47.16.84.25 1.13.32.47.1.9.09 1.24.05.38-.06 1.18-.48 1.35-.94.17-.46.17-.85.12-.94-.05-.09-.18-.13-.38-.23z"/>
+                    </svg>
+                  </span>
                   Fale Conosco
                 </Button>
               </div>
@@ -171,13 +178,12 @@ const App = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-5xl lg:text-7xl font-bold mb-6 text-shadow">
-                Sua academia funcionando
-                <span className="gradient-text block">100% sempre</span>
+              <h1 className="text-5xl lg:text-7xl font-bold mb-4 text-shadow leading-tight">
+                Com a <span className="gradient-text">FIXFIT</span>,<br />
+                <span className="text-blue-400 drop-shadow-lg">sua academia nunca para.</span>
               </h1>
-              <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-                Manutenção técnica especializada em equipamentos de academia. 
-                Atendimento nacional com a qualidade e confiabilidade que sua empresa precisa.
+              <p className="text-lg lg:text-2xl text-slate-300 mb-8 leading-relaxed font-medium">
+                Manutenção técnica de equipamentos de academia em Balneário Camboriú e região. Preventiva, corretiva, reformas e gestão com agilidade e confiança.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
@@ -194,7 +200,11 @@ const App = () => {
                   onClick={() => window.open(whatsappUrl, '_blank')}
                   className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white"
                 >
-                  <MessageCircle className="w-5 h-5 mr-2" />
+                  <span className="w-5 h-5 mr-2" style={{display: 'inline-block'}}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                      <path d="M12 2C6.477 2 2 6.477 2 12c0 1.85.504 3.58 1.38 5.07L2 22l5.13-1.35A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.64 0-3.17-.5-4.45-1.36l-.32-.21-3.05.8.82-2.97-.21-.33A7.96 7.96 0 0 1 4 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8zm4.29-5.71c-.2-.1-1.18-.58-1.36-.65-.18-.07-.31-.1-.44.1-.13.2-.5.65-.62.78-.12.13-.23.15-.43.05-.2-.1-.84-.31-1.6-.99-.59-.53-.99-1.18-1.11-1.38-.12-.2-.01-.3.09-.4.09-.09.2-.23.3-.34.1-.11.13-.19.2-.32.07-.13.03-.25-.01-.35-.05-.1-.44-1.06-.6-1.45-.16-.39-.32-.34-.44-.35-.11-.01-.25-.01-.39-.01-.13 0-.34.05-.52.25-.18.2-.7.68-.7 1.65 0 .97.7 1.91.8 2.05.1.13 1.38 2.12 3.36 2.89.47.16.84.25 1.13.32.47.1.9.09 1.24.05.38-.06 1.18-.48 1.35-.94.17-.46.17-.85.12-.94-.05-.09-.18-.13-.38-.23z"/>
+                    </svg>
+                  </span>
                   Falar com Especialista
                 </Button>
               </div>
@@ -210,18 +220,7 @@ const App = () => {
                 <img  
                   alt="Técnico especializado em manutenção de equipamentos de academia"
                   className="w-full h-auto rounded-2xl shadow-2xl"
-                 src="https://images.unsplash.com/photo-1695835805851-33a445101b3e" />
-              </div>
-              <div className="absolute -bottom-6 -left-6 glass-effect rounded-xl p-4">
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                    <CheckCircle className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold">Atendimento Nacional</p>
-                    <p className="text-sm text-slate-400">Cobertura em todo Brasil</p>
-                  </div>
-                </div>
+                  src="https://images.unsplash.com/photo-1695835805851-33a445101b3e" />
               </div>
             </motion.div>
           </div>
@@ -284,7 +283,7 @@ const App = () => {
               <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Gauge className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold gradient-text">98%</h3>
+              <h3 className="text-3xl font-bold gradient-text">100%</h3>
               <p className="text-slate-400">Taxa de Sucesso</p>
             </motion.div>
           </div>
@@ -317,9 +316,7 @@ const App = () => {
                 Sobre a <span className="gradient-text">FIXFIT</span>
               </h2>
               <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                Fundada pelo técnico <strong>Smael</strong>, a FIXFIT é referência nacional em manutenção 
-                técnica para equipamentos de academia. Com mais de 15 anos de experiência no setor, 
-                atendemos grandes redes como a SmartFit e centenas de academias em todo o Brasil.
+                Fundada pelo técnico <strong>Smael</strong>, a FIXFIT é referência em manutenção técnica para equipamentos de academia em Balneário Camboriú e região. Somos especialistas em manutenção preventiva, corretiva, reforma e administração da manutenção, com mais de 15 anos de experiência no setor, atendendo grandes redes e academias locais.
               </p>
               
               <div className="space-y-4 mb-8">
@@ -485,11 +482,6 @@ const App = () => {
                   description: "Mais de 15 anos atendendo grandes redes e academias independentes com excelência."
                 },
                 {
-                  icon: <MapPin className="w-6 h-6" />,
-                  title: "Atendimento Nacional",
-                  description: "Cobertura em todo território brasileiro com agilidade e qualidade garantida."
-                },
-                {
                   icon: <Settings className="w-6 h-6" />,
                   title: "Ferramentas Profissionais",
                   description: "Kits completos e especializados para qualquer tipo de equipamento ou situação."
@@ -565,7 +557,7 @@ const App = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Telefone</h3>
-                    <p className="text-slate-400">(11) 99999-9999</p>
+                    <p className="text-slate-400">+55 47 9210-4490</p>
                     <p className="text-sm text-slate-500">Atendimento 24h para emergências</p>
                   </div>
                 </div>
@@ -576,12 +568,17 @@ const App = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">WhatsApp</h3>
-                    <p className="text-slate-400">(11) 99999-9999</p>
+                    <p className="text-slate-400">+55 47 9210-4490</p>
                     <Button 
                       variant="link" 
                       className="p-0 h-auto text-green-400 hover:text-green-300"
                       onClick={() => window.open(whatsappUrl, '_blank')}
                     >
+                      <span className="w-4 h-4 mr-2" style={{display: 'inline-block'}}>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                          <path d="M12 2C6.477 2 2 6.477 2 12c0 1.85.504 3.58 1.38 5.07L2 22l5.13-1.35A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.64 0-3.17-.5-4.45-1.36l-.32-.21-3.05.8.82-2.97-.21-.33A7.96 7.96 0 0 1 4 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8zm4.29-5.71c-.2-.1-1.18-.58-1.36-.65-.18-.07-.31-.1-.44.1-.13.2-.5.65-.62.78-.12.13-.23.15-.43.05-.2-.1-.84-.31-1.6-.99-.59-.53-.99-1.18-1.11-1.38-.12-.2-.01-.3.09-.4.09-.09.2-.23.3-.34.1-.11.13-.19.2-.32.07-.13.03-.25-.01-.35-.05-.1-.44-1.06-.6-1.45-.16-.39-.32-.34-.44-.35-.11-.01-.25-.01-.39-.01-.13 0-.34.05-.52.25-.18.2-.7.68-.7 1.65 0 .97.7 1.91.8 2.05.1.13 1.38 2.12 3.36 2.89.47.16.84.25 1.13.32.47.1.9.09 1.24.05.38-.06 1.18-.48 1.35-.94.17-.46.17-.85.12-.94-.05-.09-.18-.13-.38-.23z"/>
+                        </svg>
+                      </span>
                       Iniciar conversa →
                     </Button>
                   </div>
@@ -593,7 +590,7 @@ const App = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">E-mail</h3>
-                    <p className="text-slate-400">contato@fixfit.com.br</p>
+                    <p className="text-slate-400">vcctecnologia@gmail.com</p>
                     <p className="text-sm text-slate-500">Resposta em até 2 horas</p>
                   </div>
                 </div>
@@ -604,8 +601,8 @@ const App = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Atendimento</h3>
-                    <p className="text-slate-400">Todo o Brasil</p>
-                    <p className="text-sm text-slate-500">Cobertura nacional garantida</p>
+                    <p className="text-slate-400">Balneário Camboriú e região</p>
+                    <p className="text-sm text-slate-500">Cobertura local garantida</p>
                   </div>
                 </div>
               </div>
@@ -661,7 +658,7 @@ const App = () => {
                     value={formData.phone}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                    placeholder="(11) 99999-9999"
+                    placeholder="+55 47 9210-4490"
                   />
                 </div>
 
@@ -707,11 +704,7 @@ const App = () => {
                 <span className="text-xl font-bold gradient-text">FIXFIT</span>
               </div>
               <p className="text-slate-400 mb-4">
-                Manutenção técnica especializada em equipamentos de academia. 
-                Atendimento nacional com qualidade e confiabilidade.
-              </p>
-              <p className="text-sm text-slate-500">
-                CNPJ: 00.000.000/0001-00
+                Empresa especializada em equipamentos de academia. Manutenção preventiva, corretiva, reforma e administração da manutenção em Balneário Camboriú e região, com qualidade e confiabilidade.
               </p>
             </div>
 
@@ -736,9 +729,9 @@ const App = () => {
             <div>
               <span className="text-lg font-semibold mb-4 block">Contato</span>
               <div className="space-y-2 text-slate-400">
-                <p>📞 (11) 99999-9999</p>
-                <p>📧 contato@fixfit.com.br</p>
-                <p>📍 Atendimento Nacional</p>
+                <p>📞 +55 47 9210-4490</p>
+                <p>📧 vcctecnologia@gmail.com</p>
+                <p>📍 Balneário Camboriú e região</p>
                 <div className="flex space-x-4 mt-4">
                   <Button 
                     size="sm" 
@@ -746,7 +739,11 @@ const App = () => {
                     onClick={() => window.open(whatsappUrl, '_blank')}
                     className="border-green-600 text-green-400 hover:bg-green-600 hover:text-white"
                   >
-                    <MessageCircle className="w-4 h-4 mr-2" />
+                    <span className="w-4 h-4 mr-2" style={{display: 'inline-block'}}>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path d="M12 2C6.477 2 2 6.477 2 12c0 1.85.504 3.58 1.38 5.07L2 22l5.13-1.35A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.64 0-3.17-.5-4.45-1.36l-.32-.21-3.05.8.82-2.97-.21-.33A7.96 7.96 0 0 1 4 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8zm4.29-5.71c-.2-.1-1.18-.58-1.36-.65-.18-.07-.31-.1-.44.1-.13.2-.5.65-.62.78-.12.13-.23.15-.43.05-.2-.1-.84-.31-1.6-.99-.59-.53-.99-1.18-1.11-1.38-.12-.2-.01-.3.09-.4.09-.09.2-.23.3-.34.1-.11.13-.19.2-.32.07-.13.03-.25-.01-.35-.05-.1-.44-1.06-.6-1.45-.16-.39-.32-.34-.44-.35-.11-.01-.25-.01-.39-.01-.13 0-.34.05-.52.25-.18.2-.7.68-.7 1.65 0 .97.7 1.91.8 2.05.1.13 1.38 2.12 3.36 2.89.47.16.84.25 1.13.32.47.1.9.09 1.24.05.38-.06 1.18-.48 1.35-.94.17-.46.17-.85.12-.94-.05-.09-.18-.13-.38-.23z"/>
+                      </svg>
+                    </span>
                     WhatsApp
                   </Button>
                 </div>
@@ -757,7 +754,7 @@ const App = () => {
           <div className="section-divider"></div>
 
           <div className="text-center text-slate-500">
-            <p>&copy; 2024 FIXFIT. Todos os direitos reservados.</p>
+            <p>&copy; 2025 FIXFIT. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
@@ -769,7 +766,11 @@ const App = () => {
           onClick={() => window.open(whatsappUrl, '_blank')}
           className="bg-green-600 hover:bg-green-700 rounded-full w-16 h-16 shadow-2xl"
         >
-          <MessageCircle className="w-8 h-8" />
+          <span className="w-8 h-8" style={{display: 'inline-block'}}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="32" height="32">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 1.85.504 3.58 1.38 5.07L2 22l5.13-1.35A9.953 9.953 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.64 0-3.17-.5-4.45-1.36l-.32-.21-3.05.8.82-2.97-.21-.33A7.96 7.96 0 0 1 4 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8zm4.29-5.71c-.2-.1-1.18-.58-1.36-.65-.18-.07-.31-.1-.44.1-.13.2-.5.65-.62.78-.12.13-.23.15-.43.05-.2-.1-.84-.31-1.6-.99-.59-.53-.99-1.18-1.11-1.38-.12-.2-.01-.3.09-.4.09-.09.2-.23.3-.34.1-.11.13-.19.2-.32.07-.13.03-.25-.01-.35-.05-.1-.44-1.06-.6-1.45-.16-.39-.32-.34-.44-.35-.11-.01-.25-.01-.39-.01-.13 0-.34.05-.52.25-.18.2-.7.68-.7 1.65 0 .97.7 1.91.8 2.05.1.13 1.38 2.12 3.36 2.89.47.16.84.25 1.13.32.47.1.9.09 1.24.05.38-.06 1.18-.48 1.35-.94.17-.46.17-.85.12-.94-.05-.09-.18-.13-.38-.23z"/>
+            </svg>
+          </span>
         </Button>
       </div>
     </div>

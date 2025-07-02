@@ -301,7 +301,7 @@ const App = () => {
               viewport={{ once: true }}
             >
               <img  
-                alt="Smael, fundador da FIXFIT, técnico especializado em equipamentos de academia"
+                alt="Ismael, fundador da FIXFIT, técnico especializado em equipamentos de academia"
                 className="w-full h-auto rounded-2xl shadow-2xl"
                src="https://images.unsplash.com/photo-1694712220320-5d6f4233e6aa" />
             </motion.div>
@@ -316,14 +316,14 @@ const App = () => {
                 Sobre a <span className="gradient-text">FIXFIT</span>
               </h2>
               <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                Fundada pelo técnico <strong>Smael</strong>, a FIXFIT é referência em manutenção técnica para equipamentos de academia em Balneário Camboriú e região. Somos especialistas em manutenção preventiva, corretiva, reforma e administração da manutenção, com mais de 15 anos de experiência no setor, atendendo grandes redes e academias locais.
+                Fundada pelo técnico <strong>Ismael</strong>, a FIXFIT é referência em manutenção técnica para equipamentos de academia em Balneário Camboriú e região. Somos especialistas em manutenção preventiva, corretiva, reforma e administração da manutenção, com mais de 15 anos de experiência no setor, atendendo grandes redes e academias locais.
               </p>
               
               <div className="space-y-4 mb-8">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
                   <p className="text-slate-300">
-                    <strong>Expertise Técnica:</strong> Smael é reconhecido e respeitado no setor, 
+                    <strong>Expertise Técnica:</strong> Ismael é reconhecido e respeitado no setor, 
                     com conhecimento profundo em todos os tipos de equipamentos.
                   </p>
                 </div>
